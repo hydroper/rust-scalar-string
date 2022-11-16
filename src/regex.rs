@@ -1,7 +1,7 @@
 use std::fmt::Debug;
 use std::ops::Index;
 use std::sync::{Arc};
-use super::string::{SvStringMap, SvString, AnySvStringType};
+use super::{SvStringMap, SvString, AnySvStringType};
 use super::character_validation::{is_whitespace, is_decimal_digit, hex_digit_mv};
 use enumflags2::{bitflags, BitFlags};
 
