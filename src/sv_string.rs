@@ -90,7 +90,7 @@ impl Drop for StringRepr0 {
             }
             i += 1;
         }
-        for i in f {
+        for &i in f.iter().rev() {
             p2.remove(i);
         }
         if p2.len() == 0 {

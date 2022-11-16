@@ -12,10 +12,12 @@ pub fn is_whitespace(ch: char) -> bool {
     ch == '\u{3000}'
 }
 
+#[allow(unused)]
 pub fn is_decimal_digit(ch: char) -> bool {
     ch >= '\x30' && ch <= '\x39'
 }
 
+#[allow(unused)]
 pub fn hex_digit_mv(ch: char) -> Option<i32> {
     if is_decimal_digit(ch) {
         Some((ch as i32) - 0x30)
